@@ -1,0 +1,10 @@
+* {
+  --primary-color: #0d1b2a;
+  --secondary-color: #1b263b;
+  --tertiary-color: #415a77;
+  --quaternary-color: #778da9;
+  --quinary-color: #e0e1dd;
+
+  --text-color: #f5f5f5;
+  --bg-color: #1a1a1a;
+}

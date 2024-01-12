@@ -1,0 +1,138 @@
+@import url("./constants.css");
+
+* {
+  --primary-color: #0d1b2a;
+  --secondary-color: #1b263b;
+  --tertiary-color: #415a77;
+  --quaternary-color: #778da9;
+  --quinary-color: #e0e1dd;
+  --quinary-color-rgb: 224, 225, 221;
+
+  --text-color: #f5f5f5;
+  --bg-color: #1a1a1a;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to bottom right,
+    var(--quinary-color),
+    var(--text-color)
+  );
+  display: grid;
+  width: 100vw;
+  grid-template-rows: 100vh 1fr auto;
+}
+
+.body__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.body__background__image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.body__background__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-color);
+  text-shadow: 0px 0px 128px 24px rgba(var(--quinary-color-rgb), 0.3);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.5rem 2rem;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header__logo img {
+  width: 32px;
+  color: var(--text-color);
+}
+
+.header__logo__divider {
+  width: 1px;
+  height: 24px;
+  background-color: var(--text-color);
+}
+
+.header__nav__list {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.header__nav__list--glow:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 128px 24px rgba(var(--quinary-color-rgb), 0.3);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  background-color: var(--primary-color);
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__logo img {
+  width: 32px;
+  color: var(--text-color);
+}
+
+.footer__logo__divider {
+  width: 1px;
+  height: 24px;
+  background-color: var(--text-color);
+}
+
+.footer__nav__list {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.footer__social__icon {
+  font-size: 22px;
+}
