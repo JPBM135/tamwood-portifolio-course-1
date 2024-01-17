@@ -1,0 +1,15 @@
+.animations__pulse-up-down {
+  animation: pulse-up-down 2s ease-in-out infinite;
+}
+
+@keyframes pulse-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
