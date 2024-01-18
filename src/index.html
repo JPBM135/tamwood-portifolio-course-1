@@ -17,10 +17,10 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/pages/home.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body class="body">
+  <body class="body body--home">
     <section class="body__background">
       <img
         class="body__background__image"
@@ -42,33 +42,56 @@
         <nav class="header__nav">
           <ul class="header__nav__list">
             <li>
-              <a class="header__nav__list--glow" href="#" aria-label="Home page"
-                >Home</a
+              <a
+                class="header__nav__list--glow"
+                href="#"
+                aria-label="Home page"
               >
+                <span class="header__nav__list__item--big-screen">Home</span>
+                <i
+                  class="header__nav__list__item--small-screen ph-bold ph-house"
+                ></i>
+              </a>
             </li>
             <li>
               <a
                 class="header__nav__list--glow"
                 href="pages/gallery/index.html"
                 aria-label="Gallery page"
-                >Gallery</a
               >
+                <span class="header__nav__list__item--big-screen">Gallery</span>
+                <i
+                  class="header__nav__list__item--small-screen ph-bold ph-images-square"
+                ></i>
+              </a>
             </li>
             <li>
               <a
                 class="header__nav__list--glow"
                 href="pages/locations/index.html"
                 aria-label="Locations page"
-                >Locations</a
               >
+                <span class="header__nav__list__item--big-screen"
+                  >Locations</span
+                >
+                <i
+                  class="header__nav__list__item--small-screen ph-bold ph-map-trifold"
+                ></i>
+              </a>
             </li>
             <li>
               <a
                 class="header__nav__list--glow"
                 href="pages/about/index.html"
                 aria-label="About us page"
-                >About Us</a
               >
+                <span class="header__nav__list__item--big-screen"
+                  >About Us</span
+                >
+                <i
+                  class="header__nav__list__item--small-screen ph-bold ph-users"
+                ></i>
+              </a>
             </li>
           </ul>
         </nav>
