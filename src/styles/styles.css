@@ -51,6 +51,7 @@ a {
   );
   display: grid;
   width: 100vw;
+  overflow-y: scroll;
 }
 
 .body--home {
@@ -201,4 +202,18 @@ a {
 
 .footer__social__icon {
   font-size: 22px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__social__icon:hover {
+  cursor: pointer;
+}
+
+.footer__social__icon:hover,
+.footer__nav__list:active {
+  color: var(--tertiary-color);
+}
+.footer__nav__list--glow:link,
+.footer__nav__list--glow:visited {
+  color: var(--quaternary-color);
 }

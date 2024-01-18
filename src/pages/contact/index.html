@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- MetaData -->
-    <title>InfiniMontain - Gallery</title>
+    <title>InfiniMontain - Contact Us</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../../assets/favicon.png" />
@@ -17,7 +17,7 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../../styles/pages/gallery.css" />
+    <link rel="stylesheet" href="../../styles/pages/contact.css" />
     <link rel="stylesheet" href="../../styles/styles.css" />
   </head>
   <body class="body body--sub-pages">
@@ -69,7 +69,7 @@
             <li>
               <a
                 class="header__nav__list--glow animations__growing-hover__base animations__growing-hover__from-left"
-                href="../contact/index.html"
+                href="#"
               >
                 <span class="utils__big-screen">Contact</span>
                 <i class="utils__small-screen ph-bold ph-phone"></i
@@ -79,16 +79,25 @@
         </nav>
       </div>
     </header>
-    <main
-      style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      "
-    >
-      <h1 style="color: var(--text-color); font-size: 32px">In Contruction</h1>
-      <i style="font-size: 128px" class="ph-bold ph-wrench"></i>
+    <main class="main">
+      <h1 class="main__title">Contact Us</h1>
+      <p class="main__subtitle">Send us an message about anything!</p>
+
+      <form class="main__form">
+        <span>Email*</span>
+        <input type="email" required />
+        <span>Your message*</span>
+        <textarea name="Your message" cols="30" rows="10" required></textarea>
+        <section class="main__form__submit">
+          <input type="checkbox" id="checkbox" required /> By selection this you
+          agree to our privacy policy and terms of service*
+          <button
+            class="main__form__submit__button main__form__submit__button--checkbox"
+          >
+            Submit
+          </button>
+        </section>
+      </form>
     </main>
     <footer class="footer">
       <div class="footer__logo">
