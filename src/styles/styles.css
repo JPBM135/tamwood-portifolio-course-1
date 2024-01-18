@@ -1,6 +1,9 @@
+/*  Variables */
 @import url("./constants.css");
+/* Animations */
 @import url("./animations.css");
 
+/* Globals */
 * {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
@@ -16,6 +19,27 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* Utils */
+.utils__small-screen {
+  display: none;
+}
+
+.utils__big-screen {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .utils__small-screen {
+    display: block;
+  }
+
+  .utils__big-screen {
+    display: none;
+  }
+}
+
+/* Shared styles */
 
 .body {
   margin: 0;
@@ -123,22 +147,9 @@ a {
   color: var(--text-color-light);
 }
 
-.header__nav__list__item--small-screen {
-  display: none;
-}
-
-.header__nav__list__item--big-screen {
-  display: block;
-}
-
 @media screen and (max-width: 768px) {
-  .header__nav__list__item--small-screen {
-    display: block;
+  .header__nav__list > li > a > i {
     font-size: 24px;
-  }
-
-  .header__nav__list__item--big-screen {
-    display: none;
   }
 }
 

@@ -13,3 +13,33 @@
     transform: translateY(0);
   }
 }
+
+.animations__growing-hover__base {
+  display: inline-block;
+  margin: 0;
+}
+
+.animations__growing-hover__base::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #b3e5e5;
+  border-radius: 9999px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.animations__growing-hover__base:hover::after {
+  transform: scaleX(1);
+}
+
+.animations__growing-hover__from-left::after {
+  transform-origin: 100% 50%;
+}
+
+.animations__growing-hover__from-left::after {
+  transform-origin: 0% 50%;
+}
+
+.animations__growing-hover__from-center::after {
+  transform-origin: 50% 50%;
+}
