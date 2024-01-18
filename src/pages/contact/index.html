@@ -85,9 +85,16 @@
 
       <form class="main__form">
         <span>Email*</span>
-        <input type="email" required />
+        <input class="main__form__input" type="email" required />
         <span>Your message*</span>
-        <textarea name="Your message" cols="30" rows="10" required></textarea>
+        <textarea
+          class="main__form__input"
+          name="Your message"
+          cols="30"
+          rows="10"
+          minlength="3"
+          required
+        ></textarea>
         <section class="main__form__submit">
           <input type="checkbox" id="checkbox" required /> By selection this you
           agree to our privacy policy and terms of service*

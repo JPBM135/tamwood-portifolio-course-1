@@ -22,6 +22,16 @@
   gap: 1rem;
 }
 
+.main__form__input {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.main__form__input:invalid {
+  border: 1px solid red !important;
+}
+
 .main__form__submit {
   display: grid;
   grid-template-columns: 32px auto 1fr;
