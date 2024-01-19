@@ -19,6 +19,24 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../../styles/pages/gallery.css" />
     <link rel="stylesheet" href="../../styles/styles.css" />
+    <style>
+      /* Globals */
+      * {
+        font-family: "Nunito", sans-serif;
+        font-size: 16px;
+        scroll-behavior: smooth;
+      }
+
+      p {
+        all: unset;
+        display: block;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
   </head>
   <body class="body body--sub-pages">
     <header class="header header--opaque">
@@ -79,16 +97,98 @@
         </nav>
       </div>
     </header>
-    <main
-      style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      "
-    >
-      <h1 style="color: var(--text-color); font-size: 32px">In Contruction</h1>
-      <i style="font-size: 128px" class="ph-bold ph-wrench"></i>
+    <main class="main">
+      <h1 class="main__title">Gallery</h1>
+      <p class="main__subtitle">
+        Here you can find some of the most beautiful pictures of the Canadian
+        mountains.
+      </p>
+      <div class="main__gallery">
+        <div class="main__gallery__card">
+          <img
+            alt="Mount Assiniboine"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Mount_Assiniboine.jpg/1080px-Mount_Assiniboine.jpg"
+            class="main__gallery__card__image"
+          />
+          <div class="main__gallery__card__name">Mount Assiniboine</div>
+        </div>
+        <div class="main__gallery__card">
+          <img
+            alt="Mount Robson, highest in Canadian Rockies"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Mount_Robson_South.jpg/1080px-Mount_Robson_South.jpg"
+            class="main__gallery__card__image"
+          />
+          <div class="main__gallery__card__name">
+            Mount Robson, highest in Canadian Rockies
+          </div>
+        </div>
+        <div class="main__gallery__card">
+          <img
+            alt="The Black Tusk"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Garibaldi_black_tusk.jpg/1080px-Garibaldi_black_tusk.jpg"
+            class="main__gallery__card__image"
+          />
+          <div class="main__gallery__card__name">The Black Tusk</div>
+        </div>
+        <div class="main__gallery__card">
+          <img
+            alt="Snow Dome and Dome Glacier"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Snow_Dome%2BDome_Glacier.jpg/1080px-Snow_Dome%2BDome_Glacier.jpg"
+            class="main__gallery__card__image"
+          />
+          <div class="main__gallery__card__name">
+            Snow Dome and Dome Glacier
+          </div>
+        </div>
+        <div class="main__gallery__card">
+          <img
+            alt="Mount Mackenzie"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Mount_Mackenzie_from_Mount_Revelstoke_NP.jpg/1080px-Mount_Mackenzie_from_Mount_Revelstoke_NP.jpg"
+            class="main__gallery__card__image"
+          />
+          <div class="main__gallery__card__name">Mount Mackenzie</div>
+        </div>
+        <div class="main__gallery__card">
+          <img
+            alt="Mount Columbia &amp; King Edward in background"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Mts._Columbia_%26_King_Edward.jpg/1080px-Mts._Columbia_%26_King_Edward.jpg"
+            class="main__gallery__card__image"
+          />
+          <div class="main__gallery__card__name">
+            Mount Columbia &amp; King Edward in background
+          </div>
+        </div>
+        <div class="main__gallery__card">
+          <img
+            alt="The Twins massif - South Twin and North Twin (l-r)"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/The_Twins_-_South_and_North_%28l-r%29.jpg/1080px-The_Twins_-_South_and_North_%28l-r%29.jpg"
+            class="main__gallery__card__image"
+          />
+          <div class="main__gallery__card__name">
+            The Twins massif - South Twin and North Twin (l-r)
+          </div>
+        </div>
+        <div class="main__gallery__card">
+          <img
+            alt="Mount Assiniboine seen from above Lake Magog"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Mount_Assiniboine_massif.jpg/90px-Mount_Assiniboine_massif.jpg"
+            class="main__gallery__card__image"
+          />
+          <div class="main__gallery__card__name">
+            Mount Assiniboine seen from above Lake Magog
+          </div>
+        </div>
+        <div class="main__gallery__card">
+          <img
+            alt="Snow Dome seen from Icefields Parkway"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Columbia_Icefields_-_panoramio_%281%29.jpg/1080px-Columbia_Icefields_-_panoramio_%281%29.jpg"
+            class="main__gallery__card__image"
+          />
+          <div class="main__gallery__card__name">
+            Snow Dome seen from Icefields Parkway
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__logo">
