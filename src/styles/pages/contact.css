@@ -33,8 +33,6 @@
 }
 
 .main__form__submit {
-  display: grid;
-  grid-template-columns: 32px auto 1fr;
   align-items: center;
 }
 

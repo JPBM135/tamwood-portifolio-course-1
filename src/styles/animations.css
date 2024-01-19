@@ -1,3 +1,4 @@
+/* This animation pulses up and down */
 .animations__pulse-up-down {
   animation: pulse-up-down 2s ease-in-out infinite;
 }
@@ -14,6 +15,7 @@
   }
 }
 
+/* This animation created an underline that animates on hover */
 .animations__growing-hover__base {
   display: inline-block;
   margin: 0;
