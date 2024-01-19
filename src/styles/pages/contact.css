@@ -51,7 +51,7 @@
   touch-action: none;
 }
 
-#checkbox:checked + .main__form__submit__button--checkbox {
+#checkbox:checked ~ .main__form__submit__button--checkbox {
   background-color: #1f91b0 !important;
   color: var(--text-color-light) !important;
   opacity: 1 !important;
