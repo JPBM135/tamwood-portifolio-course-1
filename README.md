@@ -13,6 +13,7 @@ The best website for seeing the most beautiful mountains in the world.
 - [Overview](#overview)
   - [The project](#the-project)
   - [Links](#links)
+  - [Lighthouse](#lighthouse-report)
 
 ## Overview
 
@@ -33,3 +34,7 @@ Users should be able to:
 - GitHub URL: https://github.com/JPBM135/tamwood-static-website
 - Author: [João Pedro Borges Martins](https://github.com/JPBM135)
 - LinkedIn: https://www.linkedin.com/in/joao-borges-martins/
+
+### Lighthouse Report
+
+<img width="647" alt="image" src="https://github.com/JPBM135/tamwood-static-website/assets/67063134/c73ecf99-ade2-434f-9f66-ac60038b0367">
