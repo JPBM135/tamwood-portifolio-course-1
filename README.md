@@ -6,3 +6,30 @@
 ### https://tamwood-static-website.vercel.app/
 
 The best website for seeing the most beautiful mountains in the world.
+
+## Table of contents
+
+- [Table of contents](#table-of-contents)
+- [Overview](#overview)
+  - [The project](#the-project)
+  - [Links](#links)
+
+## Overview
+
+This project is a static website for Tamwood Careers. It is a portfolio project for the Tamwood Careers program. It is a website that shows the most beautiful mountains in canada. This project was built using HTML, CSS only.
+
+### The project
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Able to switch between pages
+- Able to see the most beautiful mountains in the world
+
+### Links
+
+- Live Site URL: https://tamwood-static-website.vercel.app/
+- GitHub URL: https://github.com/JPBM135/tamwood-static-website
+- Author: [João Pedro Borges Martins](https://github.com/JPBM135)
+- LinkedIn: https://www.linkedin.com/in/joao-borges-martins/
