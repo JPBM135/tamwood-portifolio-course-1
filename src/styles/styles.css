@@ -3,23 +3,6 @@
 /* Animations */
 @import url("./animations.css");
 
-/* Globals */
-* {
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
-p {
-  all: unset;
-  display: block;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 /* Utils */
 .utils__small-screen {
   display: none;
