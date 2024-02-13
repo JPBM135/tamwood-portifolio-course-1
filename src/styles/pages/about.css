@@ -18,7 +18,7 @@
 }
 
 .main__section {
-  box-shadow: -2px 8px 7px 5px rgba(117, 117, 117, 0.2);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 4px;
   display: grid;
 }
@@ -29,14 +29,6 @@
 
 .main__section--reverse {
   grid-template-columns: 300px 1fr;
-}
-
-@media screen and (max-width: 768px) {
-  .main__section--normal,
-  .main__section--reverse {
-    grid-template-columns: unset;
-    grid-template-rows: auto 200px;
-  }
 }
 
 .main__section__text-container {
@@ -61,4 +53,20 @@
   height: 100%;
   object-fit: cover;
   border-radius: 0 4px 4px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main__section--normal,
+  .main__section--reverse {
+    grid-template-columns: unset;
+    grid-template-rows: auto 200px;
+  }
+
+  .main__section {
+    box-shadow: none;
+  }
+
+  .main__section__image {
+    border-radius: 4px;
+  }
 }

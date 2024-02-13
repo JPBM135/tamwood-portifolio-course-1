@@ -34,7 +34,6 @@
   );
   display: grid;
   width: 100vw;
-  /* overflow-y: scroll; */
 }
 
 .body--home {
@@ -199,4 +198,14 @@
 .footer__nav__list--glow:link,
 .footer__nav__list--glow:visited {
   color: var(--quaternary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 100vw;
+  }
+
+  .footer {
+    max-width: 100vw;
+  }
 }

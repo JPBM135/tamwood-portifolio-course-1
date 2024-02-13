@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <!-- MetaData -->
-    <title>InfiniMontain - About</title>
+    <title>InfiniMontain - FAQ</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../../assets/favicon.png" />
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="InfiniMontain - About" />
+    <meta name="title" content="InfiniMontain - Location" />
     <meta
       name="description"
       content="See the most beautiful mountains in the Canada region!"
@@ -20,7 +20,7 @@
       property="og:url"
       content="https://tamwood-static-website.vercel.app"
     />
-    <meta property="og:title" content="InfiniMontain - About" />
+    <meta property="og:title" content="InfiniMontain - Location" />
     <meta
       property="og:description"
       content="See the most beautiful mountains in the Canada region!"
@@ -36,7 +36,7 @@
       property="twitter:url"
       content="https://tamwood-static-website.vercel.app"
     />
-    <meta property="twitter:title" content="InfiniMontain - About" />
+    <meta property="twitter:title" content="InfiniMontain - Location" />
     <meta
       property="twitter:description"
       content="See the most beautiful mountains in the Canada region!"
@@ -54,9 +54,9 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
+    <script src="../../scripts/pages/faq.js" defer></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="../../styles/pages/about.css" />
+    <link rel="stylesheet" href="../../styles/pages/faq.css" />
     <link rel="stylesheet" href="../../styles/styles.css" />
     <!-- Google Site Verification -->
     <meta
@@ -117,7 +117,7 @@
             <li>
               <a
                 class="header__nav__list--glow animations__growing-hover__base animations__growing-hover__from-left"
-                href="../locations/index.html"
+                href="#"
               >
                 <!-- Will show the text in big screens and icon on small -->
                 <span class="utils__big-screen">Locations</span>
@@ -148,110 +148,142 @@
         </nav>
       </div>
     </header>
+    <!-- In construction -->
     <main class="main">
-      <section>
-        <h1 class="main__title">About Us</h1>
-        <p class="main__subtitle">
-          Where the art of capturing nature's beauty meets innovation in
-          photography.
-        </p>
-      </section>
+      <h1 class="main__title">F.A.Q - Frequently Asked Questions</h1>
+      <p class="main__subtitle">
+        If you have any other questions or inquiries, feel free to
+        <a href="contact.html">contact us</a>. We're here to help!
+      </p>
 
-      <section class="main__section main__section--normal">
-        <div class="main__section__text-container">
-          <h2 class="main__section__title">Our Story</h2>
-          <p class="main__section__text">
-            Our journey began in the picturesque town of Luminaria, nestled
-            between rolling hills and crystalline lakes in 1997. A group of
-            passionate photographers came together to create InfiniMontain, a
-            company that would redefine the way we experience the world through
-            breathtaking landscape photography.
-          </p>
-          <p class="main__section__text">
-            The founders, Emily, Alex, and Max, each brought a unique set of
-            skills to the table. Emily, the visionary dreamer; Alex, the
-            technical genius; and Max, the adventurous soul.
-          </p>
-        </div>
-        <img
-          class="main__section__image"
-          src="../../assets/about-us_01.jpeg"
-          alt="Mountain explorers"
-        />
-      </section>
-
-      <section class="main__section main__section--reverse">
-        <img
-          src="../../assets/about-us_02.jpeg"
-          alt="Mountain explorers"
-          class="main__section__image utils__big-screen"
-        />
-        <div class="main__section__text-container">
-          <h2 class="main__section__title">Our Journey</h2>
-          <p class="main__section__text">
-            Their journey started with a humble darkroom in Emily's garage,
-            where the trio spent countless nights experimenting with different
-            techniques to bring out the vivid colors and textures of nature. The
-            breakthrough came when Alex invented the "VistaLens," a
-            revolutionary lens that could capture the essence of landscapes in
-            ways never seen before.
-          </p>
-
-          <p class="main__section__text">
-            In the early 2000s, InfiniMontain gained recognition for its
-            stunning photographs of majestic mountains, serene seascapes, and
-            enchanting forests. The company quickly became a household name
-            among photography enthusiasts and nature lovers alike.
-          </p>
-
-          <p class="main__section__text">
-            With a growing team of talented photographers, InfiniMontain
-            embarked on expeditions to capture the world's most awe-inspiring
-            landscapes, from the Arctic Circle to the tropical rainforests of
-            the Amazon.
-          </p>
-        </div>
-        <img
-          src="../../assets/about-us_02.jpeg"
-          alt="Mountain explorers"
-          class="main__section__image utils__small-screen"
-        />
-      </section>
-
-      <section class="main__section main__section--normal">
-        <div class="main__section__text-container">
-          <h2 class="main__section__title">The VistaLens</h2>
-          <p class="main__section__text">
-            In 2015, InfiniMontain launched the first-ever "VistaGallery," a
-            virtual space where art enthusiasts could immerse themselves in the
-            beauty of nature without leaving their homes.
-          </p>
-          <p class="main__section__text">
-            The platform allowed users to explore curated collections, attend
-            virtual exhibitions, and even purchase limited-edition prints of
-            their favorite landscapes.
-          </p>
-          <h2 class="main__section__title">Innovation and Conservation</h2>
-          <p class="main__section__text">
-            As the years passed, InfiniMontain continued to push the boundaries
-            of landscape photography, embracing new technologies and techniques.
-            Drones became a staple in their arsenal, capturing perspectives that
-            were once impossible.
-          </p>
-          <p class="main__section__text">
-            The company's commitment to environmental conservation also led to
-            collaborations with conservation organizations, using photography as
-            a powerful tool to raise awareness about the fragility of our
-            planet.
-          </p>
-        </div>
-        <img
-          src="../../assets/about-us_03.jpeg"
-          alt="Mountain explorers"
-          class="main__section__image"
-        />
-      </section>
+      <div class="main__accordion">
+        <article class="main__accordion__card">
+          <button class="main__accordion__header-wrapper" onclick="toggle(1)">
+            <div class="main__accordion__content">
+              <h3>What is InfiniMountain?</h3>
+            </div>
+            <div class="main__accordion__icon">
+              <i class="ph ph-caret-down"></i>
+            </div>
+          </button>
+          <div id="accordion-toggle-1" class="main__accordion__body-wrapper">
+            <div class="main__accordion__item">
+              <div
+                class="main__accordion__header-wrapper main__accordion__header-wrapper--child"
+              >
+                <div class="main__accordion__content">
+                  <h3>
+                    ShutterVista is a photography company specializing in
+                    capturing breathtaking landscape photos. We aim to showcase
+                    the beauty of nature through our lens.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="main__accordion__card">
+          <button class="main__accordion__header-wrapper" onclick="toggle(2)">
+            <div class="main__accordion__content">
+              <h3>Do you offer custom photography services?</h3>
+            </div>
+            <div class="main__accordion__icon">
+              <i class="ph ph-caret-down"></i>
+            </div>
+          </button>
+          <div id="accordion-toggle-2" class="main__accordion__body-wrapper">
+            <div class="main__accordion__item">
+              <div
+                class="main__accordion__header-wrapper main__accordion__header-wrapper--child"
+              >
+                <div class="main__accordion__content">
+                  <h3>
+                    You can purchase prints directly from our website. Simply
+                    browse through our collections, select the prints you love,
+                    and proceed to checkout.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="main__accordion__card">
+          <button class="main__accordion__header-wrapper" onclick="toggle(3)">
+            <div class="main__accordion__content">
+              <h3>Are your prints environmentally friendly?</h3>
+            </div>
+            <div class="main__accordion__icon">
+              <i class="ph ph-caret-down"></i>
+            </div>
+          </button>
+          <div id="accordion-toggle-3" class="main__accordion__body-wrapper">
+            <div class="main__accordion__item">
+              <div
+                class="main__accordion__header-wrapper main__accordion__header-wrapper--child"
+              >
+                <div class="main__accordion__content">
+                  <h3>
+                    We are committed to sustainability and use eco-friendly
+                    materials wherever possible. Our prints are produced using
+                    environmentally responsible processes.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="main__accordion__card">
+          <button class="main__accordion__header-wrapper" onclick="toggle(4)">
+            <div class="main__accordion__content">
+              <h3>Can I license your images for commercial use?</h3>
+            </div>
+            <div class="main__accordion__icon">
+              <i class="ph ph-caret-down"></i>
+            </div>
+          </button>
+          <div id="accordion-toggle-4" class="main__accordion__body-wrapper">
+            <div class="main__accordion__item">
+              <div
+                class="main__accordion__header-wrapper main__accordion__header-wrapper--child"
+              >
+                <div class="main__accordion__content">
+                  <h3>
+                    Yes, we offer licensing options for commercial use of our
+                    images. Please get in touch with us to discuss your
+                    licensing needs.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="main__accordion__card">
+          <button class="main__accordion__header-wrapper" onclick="toggle(5)">
+            <div class="main__accordion__content">
+              <h3>Do you ship internationally?</h3>
+            </div>
+            <div class="main__accordion__icon">
+              <i class="ph ph-caret-down"></i>
+            </div>
+          </button>
+          <div id="accordion-toggle-5" class="main__accordion__body-wrapper">
+            <div class="main__accordion__item">
+              <div
+                class="main__accordion__header-wrapper main__accordion__header-wrapper--child"
+              >
+                <div class="main__accordion__content">
+                  <h3>
+                    Yes, we ship our prints internationally. Shipping costs and
+                    delivery times may vary depending on your location.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     </main>
+    <!-- Footer (side by side when web and on top when in cellphone) -->
     <footer class="footer">
       <div class="footer__logo">
         <img src="../../assets/logo_white.svg" alt="InfiniMontain" />
