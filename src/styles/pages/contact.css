@@ -34,6 +34,8 @@
 
 .main__form__submit {
   align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main__form__submit__button {
