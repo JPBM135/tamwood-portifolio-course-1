@@ -70,6 +70,11 @@
   transition: all 0.3s ease-in-out;
 }
 
+.main__container__card__content__button:hover {
+  background-color: var(--tertiary-color);
+  color: var(--text-color-light);
+}
+
 @media screen and (max-width: 768px) {
   .main__title {
     padding: 0 2rem;
