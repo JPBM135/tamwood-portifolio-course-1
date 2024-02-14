@@ -50,10 +50,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Scripts -->
+    <script src="./scripts/home.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/pages/home.css" />
@@ -67,10 +70,16 @@
     <style>
       /* Globals */
       * {
-        font-family: "Nunito", sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 16px;
         scroll-behavior: smooth;
         box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        height: 100%;
       }
 
       p {
@@ -92,7 +101,14 @@
         src="./assets/landscape_1.webp"
         alt="Landscape"
       />
-      <h1 class="body__background__title">The most beautiful landscapes</h1>
+      <h1 class="body__background__title utils__font-nunito">
+        The most beautiful landscapes
+      </h1>
+      <h1
+        class="body__background__title body__background__title--reflection utils__font-nunito"
+      >
+        The most beautiful landscapes
+      </h1>
       <i
         class="animations__pulse-up-down body__overlay ph ph-caret-double-down"
       ></i>
@@ -164,17 +180,15 @@
         </nav>
       </div>
     </header>
-    <main>
-      <h1 class="main__title">Our views are the most beautiful in the world</h1>
-      <div class="main__container">
-        <div
-          class="main__container__card"
-          role="article"
-          aria-labelledby="cardTitle1"
-        >
+    <main class="main">
+      <h1 class="main__title utils__font-nunito">
+        Our views are the most beautiful in the world
+      </h1>
+      <section id="home-cards" class="main__container">
+        <div class="main__container__card" role="article">
           <img
             class="main__container__card__image"
-            src="./assets/landscape_1.webp"
+            src="./assets/small/landscape_1.webp"
             alt="Landscape"
           />
           <div class="main__container__card__content">
@@ -195,14 +209,10 @@
             >
           </div>
         </div>
-        <div
-          class="main__container__card"
-          role="article"
-          aria-labelledby="cardTitle2"
-        >
+        <div class="main__container__card" role="article">
           <img
             class="main__container__card__image"
-            src="./assets/landscape_2.webp"
+            src="./assets/small/landscape_2.webp"
             alt="Landscape"
           />
           <div class="main__container__card__content">
@@ -223,14 +233,10 @@
             >
           </div>
         </div>
-        <div
-          class="main__container__card"
-          role="article"
-          aria-labelledby="cardTitle3"
-        >
+        <div class="main__container__card" role="article">
           <img
             class="main__container__card__image"
-            src="./assets/landscape_3.webp"
+            src="./assets/small/landscape_3.webp"
             alt="Landscape"
           />
           <div class="main__container__card__content">
@@ -251,14 +257,10 @@
             >
           </div>
         </div>
-        <div
-          class="main__container__card"
-          role="article"
-          aria-labelledby="cardTitle4"
-        >
+        <div class="main__container__card" role="article">
           <img
             class="main__container__card__image"
-            src="./assets/landscape_4.webp"
+            src="./assets/small/landscape_4.webp"
             alt="Landscape"
           />
           <div class="main__container__card__content">
@@ -279,14 +281,10 @@
             >
           </div>
         </div>
-        <div
-          class="main__container__card"
-          role="article"
-          aria-labelledby="cardTitle5"
-        >
+        <div class="main__container__card" role="article">
           <img
             class="main__container__card__image"
-            src="./assets/landscape_5.webp"
+            src="./assets/small/landscape_5.webp"
             alt="Landscape"
           />
           <div class="main__container__card__content">
@@ -307,14 +305,10 @@
             >
           </div>
         </div>
-        <div
-          class="main__container__card"
-          role="article"
-          aria-labelledby="cardTitle6"
-        >
+        <div class="main__container__card" role="article">
           <img
             class="main__container__card__image"
-            src="./assets/landscape_6.webp"
+            src="./assets/small/landscape_6.webp"
             alt="Landscape"
           />
           <div class="main__container__card__content">
@@ -335,7 +329,25 @@
             >
           </div>
         </div>
-      </div>
+      </section>
+      <section class="main__maps">
+        <div class="main__maps__title">
+          <h1>Find us</h1>
+        </div>
+        <div class="main__maps__iframe">
+          <iframe
+            width="100%"
+            height="310"
+            style="border: 0"
+            loading="async"
+            allowfullscreen
+            title="F Coffee Location"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCcyg-L-7OVFJcQIvDYV0gUK-oZ-QgFP2E&q=Groose%20mountain%20North%20Vancouver,%20British%20Columbia"
+          >
+          </iframe>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__logo">
