@@ -1,0 +1,294 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.main__title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.main__subtitle {
+  font-size: 16px;
+  text-align: center;
+}
+
+.main__locations {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.main__locations__map {
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  border-radius: 4px;
+  color: aliceblue;
+}
+
+.main__locations__point {
+  position: absolute;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background-color: var(--quaternary-color);
+  color: var(--text-color-light);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  opacity: 0.9;
+  font-weight: bold;
+}
+
+.main__locations__point::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--quaternary-color);
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.main__locations__point:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 10;
+  background-color: var(--secondary-color);
+}
+
+.main__locations__point:hover::after {
+  border-top-color: var(--secondary-color);
+}
+
+.main__locations__point--usa {
+  top: 23%;
+  left: 10%;
+}
+
+.main__locations__point--brazil {
+  bottom: 31%;
+  left: 24%;
+}
+
+.main__locations__point--japan {
+  top: 23%;
+  right: 16.5%;
+}
+
+.main__locations__point--canada {
+  top: 12%;
+  left: 6.5%;
+}
+
+.main__locations__point--switzerland {
+  top: 15.5%;
+  left: 39%;
+}
+
+.main__locations__point--france {
+  top: 16.5%;
+  left: 39%;
+}
+
+.main__locations__point--chile {
+  left: 18%;
+  bottom: 25%;
+}
+
+.main__locations__point--australia {
+  bottom: 24%;
+  right: 15%;
+}
+
+.main__locations__point--new-zealand {
+  bottom: 13.5%;
+  right: 6%;
+}
+
+.main__locations__point--china {
+  top: 35%;
+  right: 26%;
+}
+
+.main__locations__point--taiwan {
+  top: 32.5%;
+  right: 19.8%;
+}
+
+.main__locations__point--india {
+  bottom: 57%;
+  right: 33%;
+}
+
+.main__locations__point--south-korea {
+  top: 23%;
+  right: 17.5%;
+}
+
+.main__locations__point--russia {
+  top: 12%;
+  right: 34%;
+}
+
+.main__locations-descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.main__locations-descriptions__point {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: var(--quaternary-color);
+  color: var(--text-color-light);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.main__locations-descriptions__point__title {
+  margin: unset;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main__locations-descriptions__point__img {
+  width: 50px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.main__contact {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.5fr 4fr 1fr;
+}
+
+.main__contact__title {
+  font-size: 32px;
+}
+
+.main__contact__text {
+  font-size: 16px;
+  text-align: justify;
+  align-self: center;
+}
+
+.main__contact__button {
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  color: var(--text-color-light);
+  font-size: 16px;
+  cursor: pointer;
+  height: fit-content;
+  transition: all 0.3s ease-in-out;
+  align-self: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+.main__contact__button:hover {
+  background-color: var(--tertiary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .main__locations__point::after {
+    display: none;
+  }
+
+  .main__locations__point--usa {
+    top: 28%;
+    left: 10%;
+  }
+
+  .main__locations__point--brazil {
+    bottom: 31%;
+    left: 24%;
+  }
+
+  .main__locations__point--japan {
+    top: 29%;
+    right: 18%;
+  }
+
+  .main__locations__point--canada {
+    top: 18%;
+    left: 8.5%;
+  }
+
+  .main__locations__point--switzerland {
+    top: 21.5%;
+    left: 42.5%;
+  }
+
+  .main__locations__point--france {
+    top: 23.5%;
+    left: 40.5%;
+  }
+
+  .main__locations__point--chile {
+    left: 19.5%;
+    bottom: 22%;
+  }
+
+  .main__locations__point--australia {
+    bottom: 22%;
+    right: 18%;
+  }
+
+  .main__locations__point--new-zealand {
+    bottom: 10.5%;
+    right: 9%;
+  }
+
+  .main__locations__point--china {
+    top: 35%;
+    right: 26%;
+  }
+
+  .main__locations__point--taiwan {
+    top: 38.5%;
+    right: 21.6%;
+  }
+
+  .main__locations__point--india {
+    bottom: 56%;
+    right: 34.5%;
+  }
+
+  .main__locations__point--south-korea {
+    top: 30%;
+    right: 21.2%;
+  }
+
+  .main__locations__point--russia {
+    top: 12%;
+    right: 34%;
+  }
+
+  .main__contact {
+    grid-template-columns: 1fr;
+  }
+
+  .main__contact__button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 20px;
+  }
+
+  .main__contact__title {
+    margin-bottom: unset;
+  }
+}

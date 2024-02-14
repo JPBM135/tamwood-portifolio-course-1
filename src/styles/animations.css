@@ -45,3 +45,29 @@
 .animations__growing-hover__from-center::after {
   transform-origin: 50% 50%;
 }
+
+.animations__fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animations__from-left {
+  animation: fromLeft 0.5s ease-in-out;
+}
+
+@keyframes fromLeft {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

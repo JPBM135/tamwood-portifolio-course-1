@@ -50,10 +50,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Scripts -->
+    <script src="../../scripts/pages/locations.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../../styles/pages/locations.css" />
@@ -149,16 +152,205 @@
       </div>
     </header>
     <!-- In construction -->
-    <main
-      style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      "
-    >
-      <h1 style="color: var(--text-color); font-size: 32px">In Construction</h1>
-      <i style="font-size: 128px" class="ph-bold ph-wrench"></i>
+    <main class="main">
+      <h1 class="main__title utils__font-nunito">Locations</h1>
+      <p class="main__subtitle">
+        See the locations where we have the most beautiful mountains!
+      </p>
+      <section class="main__locations">
+        <img
+          src="../../assets/world-map.svg"
+          alt="world map"
+          class="main__locations__map"
+        />
+        <div id="locations-points" class="main__locations__points">
+          <div class="main__locations__point main__locations__point--usa">
+            <span class="utils__big-screen">USA</span>
+            <div class="utils__small-screen"></div>
+          </div>
+          <div class="main__locations__point main__locations__point--brazil">
+            <span class="utils__big-screen">Brazil</span>
+            <div class="utils__small-screen"></div>
+          </div>
+          <div class="main__locations__point main__locations__point--japan">
+            <span class="utils__big-screen">Japan</span>
+            <div class="utils__small-screen"></div>
+          </div>
+          <div class="main__locations__point main__locations__point--canada">
+            <span class="utils__big-screen">Canada</span>
+            <div class="utils__small-screen"></div>
+          </div>
+          <div
+            class="main__locations__point main__locations__point--switzerland"
+          >
+            <span class="utils__big-screen">Switzerland</span>
+            <div class="utils__small-screen"></div>
+          </div>
+          <div class="main__locations__point main__locations__point--france">
+            <span class="utils__big-screen">France</span>
+            <div class="utils__small-screen"></div>
+          </div>
+          <div class="main__locations__point main__locations__point--chile">
+            <span class="utils__big-screen">Chile</span>
+            <div class="utils__small-screen"></div>
+          </div>
+          <div class="main__locations__point main__locations__point--australia">
+            <span class="utils__big-screen">Australia</span>
+            <div class="utils__small-screen"></div>
+          </div>
+          <div
+            class="main__locations__point main__locations__point--new-zealand"
+          >
+            <span class="utils__big-screen">New Zealand</span>
+            <div class="utils__small-screen"></div>
+          </div>
+          <div class="main__locations__point main__locations__point--china">
+            <span class="utils__big-screen">China</span>
+            <div class="utils__small-screen"></div>
+          </div>
+          <div class="main__locations__point main__locations__point--taiwan">
+            <span class="utils__big-screen">Taiwan</span>
+            <div class="utils__small-screen"></div>
+          </div>
+          <div class="main__locations__point main__locations__point--india">
+            <span class="utils__big-screen">India</span>
+            <div class="utils__small-screen"></div>
+          </div>
+          <div
+            class="main__locations__point main__locations__point--south-korea"
+          >
+            <span class="utils__big-screen">South Korea</span>
+            <div class="utils__small-screen"></div>
+          </div>
+          <div class="main__locations__point main__locations__point--russia">
+            <span class="utils__big-screen">Russia</span>
+            <div class="utils__small-screen"></div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="locations-cards"
+        class="main__locations-descriptions utils__small-screen"
+      >
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">USA</h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/usa.svg"
+          />
+        </div>
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">Brazil</h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/brazil.svg"
+          />
+        </div>
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">Japan</h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/japan.svg"
+          />
+        </div>
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">Canada</h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/canada.svg"
+          />
+        </div>
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">
+            Switzerland
+          </h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/switzerland.svg"
+          />
+        </div>
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">France</h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/france.svg"
+          />
+        </div>
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">Chile</h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/chile.svg"
+          />
+        </div>
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">Australia</h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/australia.svg"
+          />
+        </div>
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">
+            New Zealand
+          </h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/new-zeland.svg"
+          />
+        </div>
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">China</h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/china.svg"
+          />
+        </div>
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">Taiwan</h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/tailwan.svg"
+          />
+        </div>
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">India</h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/india.svg"
+          />
+        </div>
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">
+            South Korea
+          </h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/south-korea.svg"
+          />
+        </div>
+        <div class="main__locations-descriptions__point">
+          <h3 class="main__locations-descriptions__point__title">Russia</h3>
+          <img
+            class="main__locations-descriptions__point__img"
+            src="../../assets/flags/russia.svg"
+          />
+        </div>
+      </section>
+      <section class="main__contact">
+        <h2 class="main__contact__title utils__font-nunito">
+          Not seeing your country?
+        </h2>
+        <p class="main__contact__text">
+          We are always looking for new locations to expand our business. If you
+          have a mountain that you think is worth showing to the world, please
+          contact us!
+        </p>
+        <a class="main__contact__button" href="../contact/index.html"
+          >Contact Us!</a
+        >
+      </section>
     </main>
     <!-- Footer (side by side when web and on top when in cellphone) -->
     <footer class="footer">
