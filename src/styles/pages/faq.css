@@ -161,6 +161,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .main {
+    padding: 2rem;
+  }
+
   .main__accordion__content h3 {
     text-align: left;
   }
