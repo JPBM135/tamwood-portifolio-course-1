@@ -3,7 +3,7 @@
   <h1 align="left">Static Website - Portfolio project for Tamwood Careers</h1>
 </span>
 
-### https://tamwood-static-website.vercel.app/
+### <https://tamwood-static-website.vercel.app/>
 
 The best website for seeing the most beautiful mountains in the world.
 
@@ -13,7 +13,7 @@ The best website for seeing the most beautiful mountains in the world.
 - [Overview](#overview)
   - [The project](#the-project)
   - [Links](#links)
-  - [Lighthouse](#lighthouse-report)
+  - [Lighthouse Report](#lighthouse-report)
 
 ## Overview
 
@@ -30,10 +30,20 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: https://tamwood-static-website.vercel.app/
-- GitHub URL: https://github.com/JPBM135/tamwood-static-website
+- Live Site URL: <https://tamwood-static-website.vercel.app/>
+- GitHub URL: <https://github.com/JPBM135/tamwood-static-website>
 - Author: [João Pedro Borges Martins](https://github.com/JPBM135)
-- LinkedIn: https://www.linkedin.com/in/joao-borges-martins/
+- LinkedIn: <https://www.linkedin.com/in/joao-borges-martins/>
+
+| Page Name | Page Path                                                              |
+| --------- | ---------------------------------------------------------------------- |
+| Home      | <https://tamwood-static-website.vercel.app/index.html>                 |
+| Locations | <https://tamwood-static-website.vercel.app/pages/locations/index.html> |
+| Gallery   | <https://tamwood-static-website.vercel.app/pages/gallery/index.html>   |
+| FAQ       | <https://tamwood-static-website.vercel.app/pages/faq/index.html>       |
+| About     | <https://tamwood-static-website.vercel.app/pages/about/index.html>     |
+| Contact   | <https://tamwood-static-website.vercel.app/pages/contact/index.html>   |
+| 404       | <https://tamwood-static-website.vercel.app/pages/i/do/not/exist.html>  |
 
 ### Lighthouse Report
 
