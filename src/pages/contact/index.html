@@ -55,6 +55,9 @@
     />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
+    <!-- Scripts -->
+    <script src="../../scripts/pages/form.js" defer></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="../../styles/pages/contact.css" />
     <link rel="stylesheet" href="../../styles/styles.css" />
@@ -168,10 +171,16 @@
       <p class="main__subtitle">Send us an message about anything!</p>
 
       <form class="main__form">
-        <span>Email*</span>
-        <input class="main__form__input" type="email" required />
-        <span>Your message*</span>
+        <label for="form_email">Email*</label>
+        <input
+          id="form_email"
+          class="main__form__input"
+          type="email"
+          required
+        />
+        <label for="form_message">Your message*</label>
         <textarea
+          id="form_message"
           class="main__form__input"
           name="Your message"
           cols="30"
@@ -181,8 +190,8 @@
         ></textarea>
         <section class="main__form__submit">
           <div>
-            <input type="checkbox" id="checkbox" required /> By selection this
-            you agree to our
+            <input type="checkbox" id="form_checkbox" required /> By selection
+            this you agree to our
             <a
               href="#"
               aria-label="Privacy Policy"
@@ -198,7 +207,9 @@
             >*
           </div>
           <button
+            id="form_submit"
             class="main__form__submit__button main__form__submit__button--checkbox"
+            onclick="submitForm(event)"
           >
             Submit
           </button>
