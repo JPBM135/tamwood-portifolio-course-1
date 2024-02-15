@@ -89,6 +89,13 @@
 .main__maps__iframe {
   border: var(--primary-color) 3px solid;
   height: 20rem;
+  background-color: var(--primary-color);
+}
+
+.main__maps__iframe > iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 @media screen and (max-width: 768px) {
